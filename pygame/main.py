@@ -7,13 +7,14 @@ icon = pygame.image.load('icon/icon.png')
 pygame.display.set_icon(icon)
 
 
-
+player = pygame.image.load('icon/120x80_gifs/__Idle.gif')
 bg = pygame.image.load('icon/City4.png')
 
 running = True
 while running:
 
     screen.blit(bg, (0, 0))
+    screen.blit(player, (500, 400))
 
     pygame.display.update()
 
