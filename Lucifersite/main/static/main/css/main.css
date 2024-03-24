@@ -1,0 +1,39 @@
+body {
+    background-color: #2c2c2c;
+}
+
+aside {
+    float: left;
+    background-color:  #181818;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid #4d4d4d;
+    position: relative;
+}
+
+aside img {
+    width: 300px;
+    float: left;
+}
+
+aside .log {
+    font-size: 40px;
+    margin-left: 10px;
+    font-weight: bold;
+    position: relative;
+    top: -250px;
+}
+
+aside h3 {
+    margin-top: 100px;
+    font-size: 30px;
+}
+
+aside ul {list-style: none}
+aside ul li {
+    color: #ffffff;
+    display: block;
+    margin-top: 20px;
+}
