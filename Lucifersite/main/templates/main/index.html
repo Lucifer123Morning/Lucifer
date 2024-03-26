@@ -1,11 +1,22 @@
 {% extends 'main/layout.html' %}
 
-{% block title %}<h1> Lucifer page</h1>{% endblock %}
+{% block title %}<h1>{{ title }}</h1>{% endblock %}
 
 {% block content %}
     <div class="features">
-        <h1>Lucifer page</h1>
+        <h1>{{ title }}</h1>
         <p>Hot as hell!</p>
         <button class="btn btn-warning">About Lucifer</button>
+
+        {% for el in values %}
+            {% if el == 'Hot as hell!' %}
+                <p>{{ el }}</p>
+            {% endif %}
+        {% endfor %}
+
+        {% for el in obj %}
+            <p>{{ el }}</p>
+        {% endfor %}
+
     </div>
 {% endblock %}

@@ -1,7 +1,11 @@
 from django.shortcuts import render
 
 def index(request):
-    return render(request, 'main/index.html')
+    data = {
+        'title': ' Lucifer page',
+        
+    }
+    return render(request, 'main/index.html', data)
 
 
 def about(request):
