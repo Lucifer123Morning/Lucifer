@@ -1,2 +1,3 @@
 1.Lucifersite - this is a project that is a website on which you can publish various news, where they can be added and edited.
-2.
+2.Audio Taker - is a software project that allows you to extract audio tracks from video files. The program provides the user with the ability to select video files from which audio should be extracted and save the resulting audio files in the desired format (for example, MP3). This tool can be useful for those who work with multimedia content and need to extract audio from videos for further editing or use in other projects.
+3.CipherGuard - это проект, направленный на обеспечение безопасности и конфиденциальности данных путем шифрования их с использованием различных алгоритмов шифрования. Программа предоставляет пользователю возможность зашифровывать файлы и сообщения, делая их недоступными для просмотра или изменения без соответствующего ключа или пароля.
