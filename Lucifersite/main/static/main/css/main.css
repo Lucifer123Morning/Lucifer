@@ -4,13 +4,15 @@ body {
 
 aside {
     float: left;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
     background-color:  #181818;
     width: 20%;
     padding: 2.5%;
-    height: 100vh;
     color: #fff;
     border-right: 5px solid #4d4d4d;
-    position: relative;
 }
 
 aside img {
@@ -40,7 +42,7 @@ aside ul li a {
 }
 
 aside ul li:hover, aside ul a:hover {
-    color: #eb5959;
+    color: #c26033;
     text-decoration: none;
     transform: scale(1.05);
 }
@@ -55,3 +57,51 @@ main .features {
 
 main .features h1 {font-size: 50px;}
 main .features p {max-width: 400px; margin: 20px auto;}
+
+.alert-warning {
+    width: 400px;
+    margin: 20px 34%; 
+    padding: 15px;
+    border: 1px solid #e0b476;
+    background-color: #d8ca85; 
+    color: #8a6d3b; 
+    text-align: center; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    
+}
+
+form {
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #181818;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #413232;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6cbe00; /* Зеленый цвет кнопки */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #5aa802;
+}
