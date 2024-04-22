@@ -15,3 +15,5 @@
 6.Static Site: This project represents a static website characterized by its unchanging content, which can only be modified by the developer. It serves as a reliable platform for showcasing information or content that doesn't require frequent updates.
 
 ![Снимок экрана 2024-03-28 215040](https://github.com/Lucifer123Morning/Lucifer/assets/156316043/f198a70a-867d-4742-b952-82ab3c7b3d95)
+
+7.a JavaScript application that generates an "internal linking" report for any website on the Internet by crawling every page of the site.
