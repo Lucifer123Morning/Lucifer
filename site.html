@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя личная веб-страница</title>
+    <style>
+        /* CSS стили для стилизации страницы */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            color: #666;
+        }
+
+        /* Стили для кнопок */
+        .btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Добро пожаловать на мою личную веб-страницу!</h1>
+    <p>Здесь вы найдете информацию обо мне и моих учебных достижениях в сфере backend.</p>
+
+    <!-- Форма для добавления статей -->
+    <form id="articleForm">
+        <label for="articleTitle">Заголовок статьи:</label><br>
+        <input type="text" id="articleTitle" name="articleTitle" required><br>
+        <label for="articleContent">Содержание статьи:</label><br>
+        <textarea id="articleContent" name="articleContent" rows="4" required></textarea><br>
+        <button type="submit" class="btn">Добавить статью</button>
+    </form>
+
+    <!-- Контейнер для отображения добавленных статей -->
+    <div id="articleContainer"></div>
+</div>
+
+<script>
+    // JavaScript для добавления статей на страницу
+    const articleForm = document.getElementById('articleForm');
+    const articleContainer = document.getElementById('articleContainer');
+
+    // Обработчик события отправки формы
+    articleForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // Предотвращаем стандартное поведение формы
+
+        // Получаем значения из полей формы
+        const title = document.getElementById('articleTitle').value;
+        const content = document.getElementById('articleContent').value;
+
+        // Создаем элементы для отображения статьи
+        const article = document.createElement('div');
+        article.classList.add('article');
+        article.innerHTML = `
+            <h2>${title}</h2>
+            <p>${content}</p>
+        `;
+
+        // Добавляем статью в контейнер
+        articleContainer.appendChild(article);
+
+        // Очищаем поля формы после добавления статьи
+        articleForm.reset();
+    });
+</script>
+
+</body>
+</html>
